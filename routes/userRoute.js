@@ -10,7 +10,9 @@ userRouter.post('/signup', signUp)
 
 userRouter.post('/login', login)
 
-userRouter.get('/User', User)
+userRouter.get('/User',(req, res)=>{
+    res.send('users info')
+} )
 
 
 export default userRouter;
