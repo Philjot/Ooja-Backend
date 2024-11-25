@@ -24,7 +24,7 @@ app.use(express.static('public'));
 app.use('/api/v1/auth', userRouter)
 app.use('/api/v1/product', productRouter)
 
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 4500
 
 
 app.listen(PORT, (err)=>{
